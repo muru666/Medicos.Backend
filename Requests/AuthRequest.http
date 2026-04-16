@@ -1,0 +1,29 @@
+//Crear usuario
+
+POST http://localhost:5140/api/auth/register
+Content-Type: application/json
+
+{
+	"email": "usuario@ejemplo.com",
+	"password": "Password123!"
+}
+
+###
+//Ingresar con usuario
+POST http://localhost:5140/api/auth/login
+Content-Type: application/json
+
+{
+	"email": "usuario@ejemplo.com",
+	"password": "Password123!"
+}
+
+###
+//Ingresar con admin
+POST http://localhost:5140/api/auth/login
+Content-Type: application/json
+
+{
+	"email": "admin@admin.com",
+	"password": "Admin1234"
+}

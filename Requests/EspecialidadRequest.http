@@ -1,0 +1,27 @@
+GET http://localhost:5140/api/Especialidad
+
+###
+
+GET http://localhost:5140/api/Especialidad/8
+
+###
+
+POST http://localhost:5140/api/Especialidad/
+Content-Type: application/json
+
+{
+  "Nombre": "Cocinero"
+}
+
+###
+
+PUT http://localhost:5140/api/Especialidad/8
+Content-Type: application/json
+
+{
+  "Nombre": "Piesólogo"
+}
+
+###
+
+DELETE http://localhost:5140/api/Especialidad/8
